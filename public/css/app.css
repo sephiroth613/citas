@@ -1,0 +1,44 @@
+.dropdown-menu-end:hover {
+    background-color: #f1f1f1;
+    color: white;
+    
+}
+
+.dropdown-item {
+    background-color: #ffffff;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.circle-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dfe8ff;
+    /* Puedes cambiar el color de fondo según tus preferencias */
+    margin-right: 10px;
+    /* Ajusta el margen según sea necesario */
+    text-align: center;
+    line-height: 30px;
+    color: black;
+    /* Puedes cambiar el color del icono según tus preferencias */
+}
+@media (max-width: 576px) {
+    .dropdown-menu {
+        max-width: 100%;
+        overflow: hidden;
+        font-size: 10px;
+    }
+
+    .dropdown-item {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+

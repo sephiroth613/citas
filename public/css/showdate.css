@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+    th i {
+        
+        font-size: 16px;
+        
+    }
+
+    th {
+        font-size: 10px;
+    }
+}
