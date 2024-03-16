@@ -27,12 +27,10 @@ public function store(Request $request)
     $payload =[
         'messaging_product' => 'WHATSAPP',
         'to' => $phoneNumber,
-        'type' => 'template',
-        'template' => [
-            'name' => 'bienvenido',
-            'language' => [
-                'code' => 'en_US'
-            ]
+        'type' => 'text',
+        'text' => [
+            'body' => 'Holis',
+            
         ]
     ];
     $message = Http::withToken($token)->post('https://graph.facebook.com/'. $version . '/'. $phoneId .'/messages', $payload)->throw()->json();
@@ -43,4 +41,5 @@ public function store(Request $request)
         return response()->json($e);
     }   
 }
+
 }

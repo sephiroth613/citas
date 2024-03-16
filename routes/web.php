@@ -57,5 +57,6 @@ Route::middleware(['auth'])->group(function () {
 
     //contacto para whatsapp
     Route::get('/contacto', [ContactoController::class, 'store']);
+    Route::post('/webhook', [ContactoController::class, 'verifywebhook']);
     
 });
